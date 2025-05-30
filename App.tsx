@@ -52,7 +52,7 @@ export default function App() {
         value={novaTarefa} 
         onChangeText={setNovaTarefa}
       />
-      <Button title='Adicionar' onPress={adicionar}/>
+      <Button title='Adicionar' onPress={adicionar} color={"purple"}/>
       <View>
         {renderLista()}
       </View>
@@ -63,7 +63,9 @@ export default function App() {
 
 const styles = StyleSheet.create({
   input: {
-    borderWidth: 100,
+    borderWidth: 40,
+    backgroundColor: "gray"
     
   },
+  
 });
